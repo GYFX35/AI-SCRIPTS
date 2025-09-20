@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#keyboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.key:hover {
+    background-color: #f0f0f0;
+}
+
+.key.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 123, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none; /* Make sure the cursor doesn't interfere with mouse events */
+    transform: translate(-50%, -50%); /* Center the cursor on the finger tip */
+    display: none; /* Initially hidden */
+}
