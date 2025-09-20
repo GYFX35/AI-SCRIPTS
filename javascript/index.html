@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Digital Keyboard</h1>
+    <div id="cursor"></div>
+    <button id="start-camera">Start Camera</button>
+    <video id="video" width="640" height="480" autoplay muted style="display: none;"></video>
+    <div id="keyboard-container"></div>
+    <!-- Require the peer dependencies of hand-pose-detection. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
+    <script src="script.js"></script>
+</body>
+</html>
