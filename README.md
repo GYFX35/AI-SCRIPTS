@@ -1,22 +1,33 @@
-# AI-scripts
+# AI-OS: Next-Gen Digital Ecosystem
 
-This repository contains a collection of AI-powered scripts for digital development, with a focus on game design.
+AI-OS is a web-based operating system shell designed for seamless integration of AI-powered applications and enterprise-grade services. It provides a modular, secure, and responsive environment for digital development and service management.
 
 ## Project Structure
 
-*   `javascript/`: Contains JavaScript scripts for web-based game elements.
-*   `cpp/`: Contains C++ scripts for game development.
+*   `apps/`: Modular applications integrated into the OS.
+*   `cpp/`: Core C++ logic and game development scripts.
+*   `index.html` & `script.js`: The central desktop shell and windowing system.
 
-## Scripts
+## Services & Applications
 
-### JavaScript
+### Enterprise Cloud Services
+*   **Infrastructure (IaaS):** Real-time monitoring of server health, resource utilization (CPU, Memory, Storage), and regional status.
+*   **Platform (PaaS):** A developer-centric console for application deployment, staging, and production environment management.
+*   **Software (SaaS) Hub:** A centralized portal for on-demand AI tools including AI Writers, Designers, and Data Insight engines.
+*   **IT Service (ITsaas):** A comprehensive support and service management portal for handling tickets, onboarding, and infrastructure requests.
 
-*   **Digital Keyboard:** A simple digital keyboard created with HTML, CSS, and JavaScript. You can find it in the `apps/keyboard/` directory.
-*   **Tech News:** A responsive news app that displays the latest news about Microsoft, iOS, and Android. Located in `apps/news/`.
+### Utility & Development Apps
+*   **Digital Keyboard:** A responsive virtual keyboard for touch and mouse input.
+*   **Tech News:** Stay updated with the latest trends in Microsoft, iOS, and Android ecosystems.
+*   **Terminal:** A web-based shell emulator for executing commands and managing scripts.
 
-### C++
+### C++ Core
+*   **Game Loop:** Demonstrated fundamental C++ game development patterns.
 
-*   **Game Loop:** A basic C++ script that demonstrates a simple game loop. You can find it in the `cpp/` directory.
+## Security Features
+*   **Iframe Sandboxing:** All applications run in restricted environments to prevent unauthorized access to the host system.
+*   **Content Security Policy (CSP):** Strict policies to mitigate XSS and data injection attacks.
+*   **Isolated Execution:** Decoupled application logic from the core OS shell.
 
 ## License
 

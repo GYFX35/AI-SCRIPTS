@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaaS Console</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f0f2f5; }
+        .app-item { background: white; padding: 10px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+        .btn { padding: 5px 10px; background: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        .tag { font-size: 0.8em; background: #e0e0e0; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>Platform (PaaS)</h1>
+    <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <div class="app-item">
+            <div>
+                <strong>Main Web App</strong> <span class="tag">Production</span>
+                <div style="font-size: 0.9em; color: #666;">Last deployed: 2h ago</div>
+            </div>
+            <button class="btn">Deploy</button>
+        </div>
+        <div class="app-item">
+            <div>
+                <strong>API Gateway</strong> <span class="tag">Production</span>
+                <div style="font-size: 0.9em; color: #666;">Last deployed: 1d ago</div>
+            </div>
+            <button class="btn">Deploy</button>
+        </div>
+        <div class="app-item">
+            <div>
+                <strong>Worker Node</strong> <span class="tag">Staging</span>
+                <div style="font-size: 0.9em; color: #666;">Last deployed: 5m ago</div>
+            </div>
+            <button class="btn">Deploy</button>
+        </div>
+    </div>
+</body>
+</html>
