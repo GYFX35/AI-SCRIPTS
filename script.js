@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const apps = {
         keyboard: { title: 'Digital Keyboard', url: 'apps/keyboard/index.html' },
         terminal: { title: 'Terminal', url: 'apps/terminal/index.html' },
-        news: { title: 'Tech News', url: 'apps/news/index.html' }
+        news: { title: 'Tech News', url: 'apps/news/index.html' },
+        iaas: { title: 'IaaS Dashboard', url: 'apps/iaas/index.html' },
+        paas: { title: 'PaaS Console', url: 'apps/paas/index.html' },
+        saas: { title: 'SaaS Hub', url: 'apps/saas/index.html' },
+        itsaas: { title: 'ITsaas Support', url: 'apps/itsaas/index.html' }
     };
 
     desktop.addEventListener('click', (e) => {
@@ -39,15 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         win.innerHTML = `
             <div class="window-header">
-                <div class="window-title">${app.title}</div>
+                <div class="window-title"></div>
                 <div class="window-controls">
                     <div class="control minimize"></div>
                     <div class="control maximize"></div>
                     <div class="control close"></div>
                 </div>
             </div>
-            <iframe class="window-content" src="${app.url}"></iframe>
+            <iframe class="window-content" sandbox="allow-scripts allow-forms allow-same-origin"></iframe>
         `;
+
+        win.querySelector('.window-title').textContent = app.title;
+        win.querySelector('.window-content').src = app.url;
 
         windowContainer.appendChild(win);
 

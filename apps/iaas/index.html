@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IaaS Dashboard</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .status { color: green; font-weight: bold; }
+        .metric { display: flex; justify-content: space-between; margin: 10px 0; }
+        .bar-bg { background: #ddd; height: 10px; width: 100%; border-radius: 5px; overflow: hidden; }
+        .bar-fill { background: #2196F3; height: 100%; }
+    </style>
+</head>
+<body>
+    <h1>Infrastructure (IaaS)</h1>
+    <div class="card">
+        <h3>Server Status: <span class="status">ONLINE</span></h3>
+        <p>Region: US-East-1</p>
+    </div>
+    <div class="card">
+        <div class="metric">
+            <span>CPU Usage</span>
+            <span>42%</span>
+        </div>
+        <div class="bar-bg"><div class="bar-fill" style="width: 42%;"></div></div>
+        <div class="metric">
+            <span>Memory Usage</span>
+            <span>2.4GB / 8GB</span>
+        </div>
+        <div class="bar-bg"><div class="bar-fill" style="width: 30%;"></div></div>
+        <div class="metric">
+            <span>Storage</span>
+            <span>120GB / 500GB</span>
+        </div>
+        <div class="bar-bg"><div class="bar-fill" style="width: 24%;"></div></div>
+    </div>
+</body>
+</html>
