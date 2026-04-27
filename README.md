@@ -11,7 +11,8 @@ This repository contains a collection of AI-powered scripts for digital developm
 
 ### JavaScript
 
-*   **Digital Keyboard:** A simple digital keyboard created with HTML, CSS, and JavaScript. You can find it in the `javascript/` directory.
+*   **Digital Keyboard:** A simple digital keyboard created with HTML, CSS, and JavaScript. You can find it in the `apps/keyboard/` directory.
+*   **Tech News:** A responsive news app that displays the latest news about Microsoft, iOS, and Android. Located in `apps/news/`.
 
 ### C++
 
