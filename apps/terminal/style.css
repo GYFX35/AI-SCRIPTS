@@ -1,0 +1,30 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#output {
+    flex-grow: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+#input-line {
+    display: flex;
+}
+#prompt {
+    margin-right: 5px;
+}
+#command-input {
+    background: transparent;
+    border: none;
+    color: #0f0;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    flex-grow: 1;
+}

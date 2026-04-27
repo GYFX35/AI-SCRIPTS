@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         filteredNews.forEach(item => {
             const card = document.createElement('div');
-            card.className = 'news-card';
+            card.className = 'app-card news-card';
             card.innerHTML = `
                 <img src="${item.image}" alt="${item.title}">
                 <div class="news-content">

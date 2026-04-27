@@ -4,38 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #0f0;
-            font-family: 'Courier New', Courier, monospace;
-            padding: 10px;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        #output {
-            flex-grow: 1;
-            overflow-y: auto;
-            white-space: pre-wrap;
-        }
-        #input-line {
-            display: flex;
-        }
-        #prompt {
-            margin-right: 5px;
-        }
-        #command-input {
-            background: transparent;
-            border: none;
-            color: #0f0;
-            font-family: inherit;
-            font-size: inherit;
-            outline: none;
-            flex-grow: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="output">Welcome to AI-OS Terminal v1.0
@@ -46,64 +16,6 @@ Type 'help' for available commands.
         <input type="text" id="command-input" autofocus>
     </div>
 
-    <script>
-        const output = document.getElementById('output');
-        const input = document.getElementById('command-input');
-
-        input.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                const command = input.value.trim();
-                input.value = '';
-                executeCommand(command);
-            }
-        });
-
-        function print(text) {
-            output.textContent += text + '\n';
-            output.scrollTop = output.scrollHeight;
-        }
-
-        function executeCommand(cmd) {
-            print(`jules@ai-os:~$ ${cmd}`);
-            const parts = cmd.split(' ');
-            const baseCmd = parts[0].toLowerCase();
-
-            switch (baseCmd) {
-                case 'help':
-                    print('Available commands: help, clear, ls, run game');
-                    break;
-                case 'clear':
-                    output.textContent = '';
-                    break;
-                case 'ls':
-                    print('apps/  cpp/  LICENSE  README.md');
-                    break;
-                case 'run':
-                    if (parts[1] === 'game') {
-                        runGameLoop();
-                    } else {
-                        print(`Error: Cannot run ${parts[1]}`);
-                    }
-                    break;
-                case '':
-                    break;
-                default:
-                    print(`Command not found: ${baseCmd}`);
-            }
-        }
-
-        function runGameLoop() {
-            print('Starting simple game loop...');
-            let frame = 1;
-            const interval = setInterval(() => {
-                print(`Frame: ${frame}`);
-                frame++;
-                if (frame > 10) {
-                    clearInterval(interval);
-                    print('Game loop finished.');
-                }
-            }, 500);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -9,6 +9,12 @@ This repository contains a collection of AI-powered scripts for digital developm
 
 ## Scripts
 
+### Enterprise Cloud Services
+*   **Infrastructure (IaaS):** Real-time monitoring of server health, resource utilization (CPU, Memory, Storage), and regional status.
+*   **Platform (PaaS):** A developer-centric console for application deployment, staging, and production environment management.
+*   **Software (SaaS) Hub:** A centralized portal for on-demand AI tools including AI Writers, Designers, and Data Insight engines.
+*   **IT Service (ITaaS):** A comprehensive support and service management portal for handling tickets, onboarding, and infrastructure requests.
+
 ### JavaScript
 
 *   **Digital Keyboard:** A simple digital keyboard created with HTML, CSS, and JavaScript. You can find it in the `apps/keyboard/` directory.
