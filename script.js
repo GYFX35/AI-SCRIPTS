@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         iaas: { title: 'IaaS Dashboard', url: 'apps/iaas/index.html' },
         paas: { title: 'PaaS Console', url: 'apps/paas/index.html' },
         saas: { title: 'SaaS Hub', url: 'apps/saas/index.html' },
-        itsaas: { title: 'ITsaas Support', url: 'apps/itsaas/index.html' }
+        itsaas: { title: 'ITsaas Support', url: 'apps/itsaas/index.html' },
+        simulation: { title: 'Simulation Lab', url: 'apps/simulation/index.html' }
     };
 
     desktop.addEventListener('click', (e) => {

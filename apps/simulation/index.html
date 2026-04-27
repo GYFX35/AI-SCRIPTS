@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulation Lab</h1>
+        <nav>
+            <button onclick="showModule('physics')">Physics</button>
+            <button onclick="showModule('orbital')">Orbital</button>
+            <button onclick="showModule('gamedev')">Game Dev</button>
+        </nav>
+    </header>
+    <main>
+        <div id="physics-module" class="module">
+            <h2>Physics: Gravity Sandbox</h2>
+            <canvas id="physics-canvas"></canvas>
+            <div class="controls">
+                <button id="add-ball">Add Ball</button>
+                <button id="clear-physics">Clear</button>
+            </div>
+        </div>
+        <div id="orbital-module" class="module" style="display:none;">
+            <h2>Education: Orbital Mechanics</h2>
+            <canvas id="orbital-canvas"></canvas>
+            <p>Simulating planetary motion based on Kepler's laws.</p>
+        </div>
+        <div id="gamedev-module" class="module" style="display:none;">
+            <h2>Game Dev: Sprite Controller</h2>
+            <div id="game-container">
+                <div id="player">🚀</div>
+            </div>
+            <p>Use Arrow Keys to move the rocket.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
