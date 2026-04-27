@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const apps = {
         keyboard: { title: 'Digital Keyboard', url: 'apps/keyboard/index.html' },
-        terminal: { title: 'Terminal', url: 'apps/terminal/index.html' }
+        terminal: { title: 'Terminal', url: 'apps/terminal/index.html' },
+        news: { title: 'Tech News', url: 'apps/news/index.html' }
     };
 
     desktop.addEventListener('click', (e) => {
